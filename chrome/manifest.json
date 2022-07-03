@@ -1,0 +1,38 @@
+{
+  "author": "Abijith B",
+  "manifest_version": 3,
+  "name": "Artham OG",
+  "version": "0.1.0",
+  "description": "Simple Malayalam dictionary",
+  "icons": {
+    "128": "icons/Dictionary-128.png"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true
+  },
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["<all_urls>"],
+      "js": [
+        "content/main.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "main.js",
+        "content/style.css"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/ArthamDefinition.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "ArthamDefinition",
+          "members": [
+            {
+              "kind": "field",
+              "name": "word",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "privacy": "public",
+              "attribute": "word"
+            },
+            {
+              "kind": "field",
+              "name": "phonetic",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "privacy": "public",
+              "attribute": "phonetic"
+            },
+            {
+              "kind": "field",
+              "name": "definition",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]"
+            },
+            {
+              "kind": "field",
+              "name": "class",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "definitions",
+              "privacy": "public",
+              "attribute": "definitions"
+            },
+            {
+              "kind": "field",
+              "name": "isLast",
+              "privacy": "public",
+              "attribute": "isLast"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "word",
+              "fieldName": "word"
+            },
+            {
+              "name": "phonetic",
+              "fieldName": "phonetic"
+            },
+            {
+              "name": "definitions",
+              "fieldName": "definitions"
+            },
+            {
+              "name": "isLast",
+              "fieldName": "isLast"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "artham-def",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ArthamDefinition",
+          "declaration": {
+            "name": "ArthamDefinition",
+            "module": "src/ArthamDefinition.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/ArthamPopup.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "ArthamPopup",
+          "members": [
+            {
+              "kind": "field",
+              "name": "handleClick",
+              "default": "() => {\n        this.isVisible = false;\n    }"
+            },
+            {
+              "kind": "field",
+              "name": "keyword",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "privacy": "public",
+              "attribute": "keyword"
+            },
+            {
+              "kind": "field",
+              "name": "definitions",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "privacy": "public",
+              "attribute": "definitions"
+            },
+            {
+              "kind": "field",
+              "name": "isVisible",
+              "privacy": "public",
+              "attribute": "isVisible"
+            },
+            {
+              "kind": "field",
+              "name": "errorMessage",
+              "privacy": "public",
+              "attribute": "errorMessage"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "isVisible",
+              "fieldName": "isVisible"
+            },
+            {
+              "name": "keyword",
+              "fieldName": "keyword"
+            },
+            {
+              "name": "definitions",
+              "fieldName": "definitions"
+            },
+            {
+              "name": "errorMessage",
+              "fieldName": "errorMessage"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "artham-popup",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ArthamPopup",
+          "declaration": {
+            "name": "ArthamPopup",
+            "module": "src/ArthamPopup.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/artham-popup.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "artham-popup",
+          "declaration": {
+            "name": "ArthamPopup",
+            "module": "/src/ArthamPopup.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "artham-def",
+          "declaration": {
+            "name": "ArthamDefinition",
+            "module": "/src/ArthamDefinition.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/sampleData.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "sampleResponse",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  data: [\n    {\n      definitions: [\n        \"ഉറക്കമില്ലായ്‌മ\"\n        ,\n        \"ഉറക്കമില്ലായ്‌മ\"\n        ,\n        \"ഉറക്കമില്ലായ്‌മ\"\n      ],\n      word: 'insomnia'\n    },\n    {\n      definitions: ['lorem', 'ipsum'],\n      word: 'insomnia',\n      phonetic: 'in2sosd'\n    },\n    {\n      definitions: [\n        \"A sleeping disorder that is known for its symptoms of unrest and the inability to sleep.\",\n        \"A sleeping disorder that is known for its symptoms of unrest and the inability to sleep.\"\n      ],\n      word: 'insomnia',\n      phonetic: 'fʌŋ(k)ʃən/'\n    },\n  ]\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "sampleResponse",
+          "declaration": {
+            "name": "sampleResponse",
+            "module": "src/sampleData.js"
+          }
+        }
+      ]
+    }
+  ]
+}
