@@ -27,5 +27,6 @@
     - [ ] Web component build create unnecessary files
     - [ ] Can't live test web component with extension
     
-    ## Credits
-    Insipired by [Dictionary Anywhere](https://github.com/meetDeveloper/Dictionary-Anywhere) ❤️
+  
+ ## Credits
+ Insipired by [Dictionary Anywhere](https://github.com/meetDeveloper/Dictionary-Anywhere) ❤️
